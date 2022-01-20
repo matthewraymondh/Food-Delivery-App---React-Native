@@ -1,8 +1,10 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { TouchableOpacity, View, Text, Image } from "react-native";
 import { COLORS, FONTS, SIZES, icons } from "../constants";
 
 const HorizontalFoodCard = ({ containerStyle, imageStyle, item, onPress }) => {
+  const navigation = useNavigation();
   return (
     <TouchableOpacity
       style={{
@@ -11,6 +13,7 @@ const HorizontalFoodCard = ({ containerStyle, imageStyle, item, onPress }) => {
         backgroundColor: COLORS.lightGray2,
         ...containerStyle,
       }}
+      onPress={() => navigation.navigate("FoodDetail")}
     >
       {/* Image */}
       <Image source={item.image} style={imageStyle} />

@@ -1,8 +1,10 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { TouchableOpacity, View, Text, Image } from "react-native";
 import { COLORS, FONTS, SIZES, icons } from "../constants";
 
 const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
+  const navigation = useNavigation();
   return (
     <TouchableOpacity
       style={{
@@ -13,6 +15,7 @@ const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
         backgroundColor: COLORS.lightGray2,
         ...containerStyle,
       }}
+      onPress={() => navigation.navigate("FoodDetail")}
     >
       {/* Cal and fav */}
       <View style={{ flexDirection: "row" }}>

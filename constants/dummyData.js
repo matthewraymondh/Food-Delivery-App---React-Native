@@ -207,6 +207,9 @@ const fromLocs = [
 
 export default {
   vegBiryani,
+  hamburger,
+  hotTacos,
+  wrapSandwich,
 
   myProfile,
   categories,

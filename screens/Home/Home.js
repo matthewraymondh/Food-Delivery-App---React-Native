@@ -10,6 +10,7 @@ import {
 import { HorizontalFoodCard, VerticalFoodCard } from "../../components";
 import { FONTS, SIZES, COLORS, icons, dummyData } from "../../constants";
 import { FilterModal } from "../";
+import { useNavigation } from "@react-navigation/native";
 
 const Section = ({ title, onPress, children }) => {
   return (
@@ -38,6 +39,7 @@ const Section = ({ title, onPress, children }) => {
 };
 
 const Home = () => {
+  const navigation = useNavigation();
   const [selectedCategoryId, setSelectedCategoryId] = React.useState(1);
   const [selectedMenuType, setSelectedMenuType] = React.useState(1);
   const [recommends, setRecommends] = React.useState([]);
