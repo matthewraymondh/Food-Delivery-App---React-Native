@@ -1,4 +1,5 @@
 import CartQuantityButton from "./CartQuantityButton";
+import FooterTotal from "./FooterTotal";
 import Header from "./Header";
 import HeaderDetails from "./HeaderDeatails";
 import HorizontalFoodCard from "./HorizontalFoodCard";
@@ -26,4 +27,5 @@ export {
   LineDivider,
   Rating,
   StepperInput,
+  FooterTotal,
 };
