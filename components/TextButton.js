@@ -6,6 +6,7 @@ const TextButton = ({
   label,
   labelStyle,
   buttonContainerStyle,
+  disabled,
   label2 = "",
   label2Style,
   onPress,
@@ -18,6 +19,7 @@ const TextButton = ({
         backgroundColor: COLORS.primary,
         ...buttonContainerStyle,
       }}
+      disabled={disabled}
       onPress={onPress}
     >
       <Text style={{ color: COLORS.white, ...FONTS.h3, ...labelStyle }}>
