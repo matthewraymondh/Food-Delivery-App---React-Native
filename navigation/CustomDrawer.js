@@ -132,7 +132,13 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
               backgroundColor: COLORS.lightGray1,
             }}
           />
-          <CustomDrawerItem label="Track Your Order" icon={icons.location} />
+          <CustomDrawerItem
+            label="Track Your Order"
+            icon={icons.location}
+            onPress={() => {
+              navigation.navigate("Map");
+            }}
+          />
           <CustomDrawerItem label="Coupons" icon={icons.coupon} />
           <CustomDrawerItem label="Settings" icon={icons.setting} />
           <CustomDrawerItem label="Invite a Friend" icon={icons.profile} />

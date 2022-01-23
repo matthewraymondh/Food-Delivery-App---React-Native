@@ -14,6 +14,7 @@ import Rating from "./Rating";
 import StepperInput from "./StepperInput";
 import TextButton from "./TextButton";
 import TextIconButton from "./TextIconButton";
+import TextIconButtons from "./TextIconButtons";
 import TwoPointSlider from "./TwoPointSlider";
 import VerticalFoodCard from "./VerticalFoodCard";
 
@@ -36,4 +37,5 @@ export {
   FormInput,
   FormInputCheck,
   RadioButton,
+  TextIconButtons,
 };

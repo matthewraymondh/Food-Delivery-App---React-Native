@@ -203,6 +203,10 @@ const fromLocs = [
     latitude: 1.5573478487252896,
     longitude: 110.35568783282145,
   },
+  {
+    latitude: -6.990262314226173,
+    longitude: 110.42296326592131,
+  },
 ];
 
 export default {
